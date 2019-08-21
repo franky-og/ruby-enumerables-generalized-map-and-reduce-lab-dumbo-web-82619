@@ -8,13 +8,13 @@ def map(array)
 end
 
 def reduce(array, starting_point = 0)
-  if starting_point.is_a? Integer
-    newvalue = starting_point
-  else 
-    newvalue = !!starting_point
-  end
+ 
   array.each do |index|
     newvalue = yield(index, newvalue)
   end
-  return !!newvalue
+   if newvalue.is_a? Integer
+    return newvalue
+  else 
+    return !!newvalue
+  end
 end
