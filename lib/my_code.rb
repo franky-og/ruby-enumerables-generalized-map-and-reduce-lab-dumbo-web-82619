@@ -1,4 +1,4 @@
 # Your Code Here
-map(array, block){
-  
+def map(array){
+  array.each do |
 }
