@@ -8,7 +8,7 @@ def map(array)
 end
 
 def reduce(array, starting_point = 0)
-  if starting_point.is_a? Integer
+  if .is_a? Integer
     newvalue = starting_point
   else 
     newvalue = !!starting_point
