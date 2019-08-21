@@ -10,4 +10,4 @@ end
 def reduce(array, starting_point = 0)
   newvalue = starting_point
   array.each do |index|
-    newvalue = yield(newvalue)
+    newvalue = yield(newvalue, index)
