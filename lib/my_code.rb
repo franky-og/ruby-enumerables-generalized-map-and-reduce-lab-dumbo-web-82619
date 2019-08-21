@@ -7,7 +7,7 @@ def map(array)
   return newarray
 end
 
-def reduce(array, starting_point = 0)
+def reduce(array, starting_point)
   newvalue = starting_point
   array.each do |index|
     newvalue = yield(newvalue, index)
