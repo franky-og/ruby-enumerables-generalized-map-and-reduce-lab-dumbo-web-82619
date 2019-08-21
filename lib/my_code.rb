@@ -8,7 +8,7 @@ def map(array)
 end
 
 def reduce(array, starting_point)
-  if starting_point
+  if starting_point_i
   newvalue = starting_point
   array.each do |index|
     newvalue = yield(newvalue, index)
