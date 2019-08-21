@@ -12,6 +12,7 @@ def reduce(array, starting_point)
     newvalue = starting_point
   else 
     newvalue = !!starting_point
+  end
   array.each do |index|
     newvalue = yield(newvalue, index)
   end
