@@ -16,5 +16,5 @@ def reduce(array, starting_point = 0)
   array.each do |index|
     newvalue = yield(index, newvalue)
   end
-  return newvalue
+  return !!newvalue
 end
