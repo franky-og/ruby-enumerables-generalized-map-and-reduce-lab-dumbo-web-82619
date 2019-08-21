@@ -7,7 +7,7 @@ def map(array)
   return newarray
 end
 
-def reduce(array, starting_point)
+def reduce(array, starting_point = 0)
   if starting_point.is_a? Integer
     newvalue = starting_point
   else 
